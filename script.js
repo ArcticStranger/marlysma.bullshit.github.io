@@ -1,44 +1,25 @@
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
-const btnPopup = document.querySelector('.btnLogin-popup');
-const iconClose = document.querySelector('.icon-close');
-const logoGif = document.querySelector('.logo-gif');
-const emailInputs = document.querySelectorAll('.input-box input[type="email"]');
-const passwordInputs = document.querySelectorAll('.input-box input[type="password"]');
-const newSrc = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijRMSv9EpAsWacFxrCVU3HzjP_Tf3E_gw7wvaPYO5MivK7xTn6SSOQrEOy3H6fMsFwmBmU12fZOyL23RntAwGpPgJYrRLC90gCMpB9UKvdVoUidw-s13AWwAOSxCTDAPob6jALRMpzrOnMXidH4XJsx6r2OjYQy4nVYBe5RaZuaOymzhIaN7LnuQZn/s800/eye.gif";
-const originalSrc = "https://images.steamusercontent.com/ugc/2483253396486284800/F31A4D4591F3AF1DFDAA0738146B6E9403DCB205/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false";
+document.addEventListener('DOMContentLoaded', function() {
+    const reportButton = document.querySelector('.report-button');
+    const deportButton = document.querySelector('.deport-button');
+    const hotNumber = document.querySelector('.hot-number');
+    const visionNumber = document.querySelector('.vision-number');
+    const profileCard = document.querySelector('.profile-card');
+    const toggleButton = document.querySelector('.toggle-button');
 
-registerLink.addEventListener('click', ()=> {
-    wrapper.classList.add('active');
-});
+    let hotCount = 47000;
+    let visionCount = 20.5;
 
-loginLink.addEventListener('click', ()=> {
-    wrapper.classList.remove('active');
-});
+    reportButton.addEventListener('click', function() {
+        hotCount += 1000;
+        hotNumber.textContent = `${(hotCount / 1000).toFixed(1)}k`;
+    });
 
-btnPopup.addEventListener('click', ()=> {
-    wrapper.classList.add('active-popup');
-});
+    deportButton.addEventListener('click', function() {
+        visionCount += 0.1;
+        visionNumber.textContent = `${visionCount.toFixed(1)}%`;
+    });
 
-iconClose.addEventListener('click', ()=> {
-    wrapper.classList.remove('active-popup');
-});
-
-logoGif.addEventListener('click', () => {
-    if (logoGif.src !== newSrc) {
-        logoGif.src = newSrc;
-        logoGif.classList.add('new-image'); 
-               // Меняем тип у ВСЕХ полей пароля
-        passwordInputs.forEach(input => {
-            input.type = "text";
-        });
-    } else {
-        logoGif.src = originalSrc;
-        logoGif.classList.remove('new-image'); 
-             // Возвращаем тип обратно
-        passwordInputs.forEach(input => {
-            input.type = "password";
-        });
-    }
+    toggleButton.addEventListener('click', function() {
+        profileCard.classList.toggle('profile-card-alt');
+    });
 });
