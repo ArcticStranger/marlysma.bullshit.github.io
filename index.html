@@ -1,94 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MARLYSMA BULLSHIT</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework Login & Registration</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <img class="logo-gif" src="https://images.steamusercontent.com/ugc/2483253396486284800/F31A4D4591F3AF1DFDAA0738146B6E9403DCB205/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Логотип">
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
-    </header>
-
-    <div class="wrapper">
-        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="keypad-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label> 
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox" required>Remember my place</label>
-                    <a href="#">Forgot Savedata_[ara.3301]<ion-icon name="help-outline"></ion-icon></a>
-                </div>
-                <button type="submit" class="btn">Sign In</button>
-                <div class="login-register">
-                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-
-
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="text-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="keypad-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label> 
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox" required>I agree to serve the Arasaka family until my death!</label>
-                   
-                </div>
-                <button type="submit" class="btn">Sign Up</button>
-                <div class="login-register">
-                    <p>Already a servant?<a href="#" class="login-link">| Return to MIKOSHI</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="hero">
-        <div class="content">
-  <h1 class="saburo">«Сила — в преемственности», вот основной принцип семьи Арасака! <br>Под моим руководством корпорация «Арасака» вернётся к своим корням. А корни нашей компании могут сокрушить даже самую прочную скалу.
-        — Сабуро Арасака [яп. 荒坂 三郎]<br><br>
-        </h1>
-        <h2>"Андерстэндабл, хэв э грейт дей!" - Марлис Маконаги [як. ARASAKA_СТАЖЕР]</h2>
-        <a href="#" class="btn">Нажми, чумба!</a>
-        </div>
-    </div>
   
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="https://static.wikia.nocookie.net/tomandjerry/images/2/2b/Tom-de-brazos-cruzados11578470925.jpg/revision/latest/scale-to-width-down/250?cb=20210224013420" alt="" class="profile-img">
+        </div>
+        <div class="text-data">
+            <span class="name">Marlys Macon</span>   
+            <span class="job">Мечта детства: доллар по 25</span>
+        </div>
 
+        <div class="media-buttons">
+        
+            <a href="https://discord.gg/85BbpF9n" style="background: gold" class="link">
+                <i class='bx bxl-discord-alt'></i>
+            </a>
+            <a href="https://t.me/AtlasovT_Marlysma" style="background: gold" class="link">
+                <i class='bx bxl-telegram'></i>
+            </a>
+            <a href="https://vk.com/mkiujnbhytgv" style="background: gold" class="link">
+                <i class='bx bxl-vk' ></i>
+            </a>
+            <a href="https://youtube.com/@ap5226ast?si=qMRqv9m7bX0DjBv1" style="background: gold" class="link">
+                <i class='bx bxl-youtube' ></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="button report-button">Report</button>
+            <button class="button deport-button" style="background-color: red">Deport</button>
+        </div>
+        <button class="toggle-button">Toggle Theme</button>
+
+        <div class="analytics">
+            <div class="data">
+                <i class='bx bxs-hot' ></i>
+                <span class="number hot-number">47k</span>
+            </div>
+            <div class="data">
+                <i class='bx bxs-beer' ></i>
+                <span class="number beer-number">2903.3*</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-low-vision' ></i>
+                <span class="number vision-number">20.5%</span>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
