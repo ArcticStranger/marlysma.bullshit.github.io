@@ -157,7 +157,7 @@ body {
 .analytics .data {
     display: flex;
     align-items: center;
-    color: black;
+    color: rgb(21, 131, 190);
     padding: 0 20px;
     border-right: 2px solid rgb(67, 62, 31);
 }
@@ -165,7 +165,6 @@ body {
 .data i {
     font-size: 18px;
     margin-right: 6px;
-    color: purple;
 }
 
 .data:last-child{
