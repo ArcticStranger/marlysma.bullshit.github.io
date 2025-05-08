@@ -165,6 +165,7 @@ body {
 .data i {
     font-size: 18px;
     margin-right: 6px;
+    color: purple;
 }
 
 .data:last-child{
